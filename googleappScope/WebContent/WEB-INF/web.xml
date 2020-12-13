@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>google</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<filter-name>urlFilter</filter-name>
+		<filter-class>com.google.servlet.UrlFilter</filter-class>
+	</filter>
+    
+    <filter-mapping>
+       <filter-name>urlFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+	<listener>
+		<listener-class>com.google.servlet.listener.GoogleListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>config</servlet-name>
+		<jsp-file>/config.jsp</jsp-file>
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>nagendra.yadav.niit@gmail.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mobile</param-name>
+			<param-value>+919873003702</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>config</servlet-name>
+		<url-pattern>/arun</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>amogWorld</servlet-name>
+		<servlet-class>com.google.servlet.AmogWorld</servlet-class>
+		<init-param>
+			<param-name>welcome</param-name>
+			<param-value>no</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>amogWorld</servlet-name>
+		<url-pattern>/amogWorld</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>amogWorld</servlet-name>
+		<url-pattern>/shashank</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>CalFactServlet</display-name>
+		<servlet-name>CalFactServlet</servlet-name>
+		<servlet-class>com.google.servlet.CalFactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CalFactServlet</servlet-name>
+		<url-pattern>/calFact</url-pattern>
+	</servlet-mapping>
+</web-app>

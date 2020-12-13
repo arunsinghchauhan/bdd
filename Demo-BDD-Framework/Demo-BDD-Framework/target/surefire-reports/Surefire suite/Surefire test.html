@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 26 17:42:58 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21629 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.company.project.stepdefs.RunnerTest.run_cukes()'><b>run_cukes</b><br>Test class: com.company.project.stepdefs.RunnerTest<br>Test method: Runs Cucumber Features<br/>
+<a href="#Output-2003534796" onClick='toggleBox("Output-2003534796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2003534796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2003534796">
+<div "featureFile">Feature File: 1_LoginPage.feature</div><br/>
+<div "feature">Feature: 1. Login Features</div><br/>
+<div "scenario">Scenario: Login</div><br/>
+[INFO]: The test Browser is CHROME !!!<br/>
+<div "result">Given  I Launch Application URL (passed : 9s)</div><br/>
+I Enter Domain Name: 'Framework'<br/>
+I Enter User Name: 'ssingh7688'<br/>
+I Enter Password: '56837688'<br/>
+I Click On Login Button<br/>
+<div "result">When  I Login As &quot;Admin&quot; (passed : 7s)</div><br/>
+********************************************************<br/>
+Scenario Result: passed<br/>
+********************************************************<br/>
+<div "featureFile">Feature File: 2_Dashboard.feature</div><br/>
+<div "feature">Feature: 2. Dashboard Features</div><br/>
+<div "scenario">Scenario: Create a new user</div><br/>
+Page Title Is 'framework | Home'<br/>
+<div "result">Given  I verify page title is &quot;framework | Home&quot; (passed : 0s)</div><br/>
+I Select Link 'Add user'<br/>
+<div "result">When  I select link &quot;Add user&quot; (passed : 2s)</div><br/>
+********************************************************<br/>
+Scenario Result: passed<br/>
+********************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.company.project.stepdefs.RunnerTest@3cda1055</td></tr>
+</table><p>
+</body>
+</html>

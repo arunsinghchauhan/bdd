@@ -1,0 +1,42 @@
+package automation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.*;
+
+public class AutomateGmail {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Arun Chauhan\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://mail.google.com");
+		
+		
+		driver.findElement(By.id("identifierId")).sendKeys("samsungs5qait@gmail.com");
+		Thread.sleep(2000);
+		driver.findElement(By.className("CwaK9")).click();
+		Thread.sleep(4000);
+		//driver.findElement(By.className("Xb9hP")).sendKeys("Qait@123");
+		//driver.findElement(By.cssSelector("#password")).sendKeys("Qait@123");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Qait@123");
+
+		Thread.sleep(2000);
+		driver.findElement(By.className("CwaK9")).click();
+		//Thread.sleep(2000);
+		
+		//driver.findElement(By.id("identifierId")).sendKeys("samsungs5qait@gmail.com");
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+	}
+
+}

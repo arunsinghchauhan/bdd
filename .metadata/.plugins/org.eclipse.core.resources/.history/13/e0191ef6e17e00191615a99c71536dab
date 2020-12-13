@@ -1,0 +1,12 @@
+package com.basicconcepts;
+
+public class MainCar {
+
+	//public static void main(String[] args) {
+		Car c=new Car(120000,"Santro","White");
+		System.out.println(c.price=5646255);
+		c.function1(34234, "ion", "red");
+	
+	}
+
+}

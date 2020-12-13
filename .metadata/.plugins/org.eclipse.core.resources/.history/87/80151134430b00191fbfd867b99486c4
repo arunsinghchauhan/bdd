@@ -1,0 +1,21 @@
+package demo;
+
+import org.openqa.selenium.By.ById;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestFacebookRegistrationPage {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Arun Chauhan\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		
+		driver.findElement(ById.id("email")).sendKeys("arun.chauhan008@gmail.com");
+		driver.findElement(ById.id("pass")).sendKeys("9997362226aligarh");
+		
+	}
+
+}

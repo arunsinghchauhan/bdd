@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CollectionBasic {
+
+	int temp = 0;
+	int i;
+	Scanner sc = new Scanner(System.in);
+	//sc.nextInt();
+	int a[]= new int[5];
+	
+	public static void main(String[] args) {
+
+		//ArrayList<String> list = new ArrayList<String>();
+		
+		/*int temp = 0;
+		int i;
+		System.out.println("Enter 5 numbers: ");
+		Scanner sc = new Scanner(System.in);
+		//sc.nextInt();
+		int a[]= new int[5];
+		
+		for (i=0; i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+			
+		}
+		
+		System.out.println("You have entered the number as follows: ");
+		for(i=0;i<a.length;i++)
+		{
+		 System.out.println(a[i]);
+		}*/
+		
+		System.out.println("The sum of numbers you have been entered is: ");
+		
+		CollectionBasic cb= new CollectionBasic();
+		cb.testm();
+		
+		/*for(i=0;i<a.length;i++)
+		{		
+			temp=temp+a[i];
+		}
+			System.out.println(temp)*/;
+		
+		
+		
+	}
+	
+	public void testm()
+	{ 
+		for(i=0;i<a.length;i++)
+		{		
+			temp=temp+a[i];
+		}
+			System.out.println(temp);
+	}
+	
+	public void testm2()
+	{
+		System.out.println("Enter 5 numbers: ");
+		
+		for (i=0; i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+			
+		}
+		
+		System.out.println("You have entered the number as follows: ");
+		for(i=0;i<a.length;i++)
+		{
+		 System.out.println(a[i]);
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+
+public class NoOFObjects {
+
+	static int i=0;
+	
+	public NoOFObjects()
+	{
+		i++;
+	}
+	public void counter()
+	{
+		
+		System.out.println(i);
+	}
+	
+	public static void main(String[] args) {
+
+		NoOFObjects obj1= new NoOFObjects();
+		NoOFObjects obj2= new NoOFObjects();
+		
+		obj2.counter();
+		
+	}
+
+}

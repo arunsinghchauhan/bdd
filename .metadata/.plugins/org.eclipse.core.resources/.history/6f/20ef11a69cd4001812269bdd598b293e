@@ -1,0 +1,18 @@
+package com.basicconcepts;
+
+public class Poly {
+
+	void function1()
+	{
+		System.out.println("Task of function 1 in first class");
+	}
+
+}
+
+class Poly2 extends Poly
+{
+	void function1()
+	{
+		System.out.println("Task of function 1 in second class");
+	}
+}

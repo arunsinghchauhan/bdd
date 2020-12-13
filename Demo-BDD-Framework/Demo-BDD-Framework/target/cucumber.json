@@ -1,0 +1,142 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login",
+        "description": "",
+        "id": "1.-login-features;login",
+        "after": [
+          {
+            "result": {
+              "duration": 482374,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunnerTest.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8204070232,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Launch Application URL",
+            "match": {
+              "location": "LoginPageStepDef.LaunchURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9271628820,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Login As \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginPageStepDef.LoginIntoApplication(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "1. Login Features",
+    "description": "",
+    "id": "1.-login-features",
+    "keyword": "Feature",
+    "uri": "1_LoginPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Create a new user",
+        "description": "",
+        "id": "2.-dashboard-features;create-a-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 226238,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunnerTest.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9472991,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I verify page title is \"framework | Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "framework | Home",
+                  "offset": 24
+                }
+              ],
+              "location": "CommonPageStepDef.VerifyPageTitle(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3101295268,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select link \"Add user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add user",
+                  "offset": 15
+                }
+              ],
+              "location": "CommonPageStepDef.selectLink(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Dashboard"
+          }
+        ]
+      }
+    ],
+    "name": "2. Dashboard Features",
+    "description": "",
+    "id": "2.-dashboard-features",
+    "keyword": "Feature",
+    "uri": "2_Dashboard.feature"
+  }
+]

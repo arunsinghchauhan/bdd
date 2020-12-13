@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class ListEx {
+
+	public static void main(String[] args) {
+
+		List<String> list1 = new ArrayList<String>();
+		
+		list1.add("Arun");
+		list1.add("Arun");
+		list1.add("Anand");
+		list1.add("Mit");
+		list1.add("Adarsh");
+		
+		//list1.remove(3);
+		
+		for(int i=0;i<list1.size();i++)
+		{
+			System.out.println(list1.get(i));
+		}
+		
+		Set<Integer> set1= new HashSet<Integer>();
+		
+		set1.add(2);
+		set1.add(2);
+		set1.add(3);
+		set1.add(4);
+		
+		for(int x: set1)
+		{
+			System.out.println(x);
+		}
+		
+
+	}
+
+}

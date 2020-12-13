@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class ListEx {
+
+	public static void main(String[] args) {
+
+		List<String> list = new ArrayList<String>();
+		
+		list.add("Arun");
+		list.add("Anand");
+		list.add("Mit");
+		list.add("Adarsh");
+		
+		
+
+	}
+
+}
